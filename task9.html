@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Divisions</title>
+    <style>
+        /* General styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Container to hold all divisions */
+        .container {
+            display: flex;
+            justify-content: space-evenly; /* Space divisions evenly */
+            align-items: center; /* Vertically center-align divisions */
+            margin-top: 50px;
+        }
+
+        /* Styling for each division */
+        .division {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Styling for the images above headings */
+        .division img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Styling for headings */
+        .division h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        /* Hover effect on each division */
+        .division:hover {
+            background-color: #f1f1f1;
+            transform: translateY(-5px); /* Slight lift effect */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack divisions vertically */
+                align-items: flex-start;
+            }
+
+            .division {
+                width: 100%;
+                margin-bottom: 20px; /* Add space between divisions */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container holding all the divisions -->
+    <div class="container">
+        <!-- Home Division -->
+        <div class="division">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrfVvIlLb0jOKGcmfqMWVziY0PVoPAChCHyA&s" alt="Home Logo">
+            <h2>Home</h2>
+        </div>
+
+        <!-- About Division -->
+        <div class="division">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOQvcf0tr8lLrwUrQ7uXYosTVACpWgvY4xqQ&s" alt="About Logo">
+            <h2>About</h2>
+        </div>
+
+        <!-- Gallery Division -->
+        <div class="division">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNaWlxtftZFb02uDthOdq1Ms-oo-VD9o9S0ULeQ5q0hZyaeWE_ue-_GIdACgNFQcAUAE&usqp=CAU" alt="Gallery Logo">
+            <h2>Gallery</h2>
+        </div>
+
+        <!-- Contact Division -->
+        <div class="division">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzg6IB0Ez1dCrBhkqbxE3Iq_1J2PpQEh_nQ&s" alt="Contact Logo">
+            <h2>Contact</h2>
+        </div>
+    </div>
+</body>
+</html>
